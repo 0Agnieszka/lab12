@@ -1,16 +1,27 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tytuł strony</title>
-  <link rel="stylesheet" href="./src/style.css">
-</head>
-<body>
-  <div id="app">
-    <h1 class="text-2xl font-bold">Nagłówek</h1>
-    <button id="count" class="bg-blue-300 p-4">count</button>
-  </div>
-  <script type="module" src="/src/main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./src/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tytuł strony</title>
+  </head>
+  <body>
+
+    <h1 class="text-2xl font-bold">Lista</h1>
+
+    <div id="article-list"></div>
+
+    <!-- forms -->
+    <form id="article-form">
+      <h2 class="text-2xl font-bold">Dodaj artykuł</h2>
+      <input name="title" placeholder="Tytuł" class="border black"/>
+      <input name="subtitle" placeholder="Podtytuł" class="border black"/>
+      <input name="author" placeholder="Nazwa autora" class="border black"/>
+      <textarea name="content" placeholder="Treść" class="border black"></textarea>
+      <button type="submit" class="bg-white-300 hover:bg-blue-200 border black">Dodaj</button>
+    </form>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>
