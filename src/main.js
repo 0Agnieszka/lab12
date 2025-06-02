@@ -2,7 +2,6 @@ import './style.css';
 import { createClient } from '@supabase/supabase-js';
 
 const supabase = createClient('https://gcqzpssokajayorbjbrb.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdjcXpwc3Nva2FqYXlvcmJqYnJiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDc2NTQyMzksImV4cCI6MjA2MzIzMDIzOX0.c2MHCFThW_HcaM2qeQVKBrFRAtlWO8_l_6NsphnhhYs');
-
 const articleList = document.querySelector('#article-list');
 const form = document.querySelector('#article-form');
 
