@@ -18,6 +18,7 @@ async function fetchArticles(sort = 'created_at.desc') {
       <h2 class="text-xl font-bold">${article.title}</h2>
       <h3 class="italic text-gray-600">${article.subtitle}</h3>
       <p class="text-sm text-gray-500">Autor: ${article.author}</p>
+      <p class="text-sm text-gray-500">Data: ${article.created_at}</p>
       <p>${article.content}</p>
     </div>
   `).join('');
